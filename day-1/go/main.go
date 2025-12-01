@@ -17,6 +17,11 @@ const (
 	startArrowPosition = 50
 )
 
+// shift changes the state of the dial by count steps
+// Example:
+// state = 1, count = 1 -> 2
+// state = 99, count = 1 -> 0
+// state = 0, count = -1 -> 99
 func shift(state int, count int) int {
 	res := state + count
 
