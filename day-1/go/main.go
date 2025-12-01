@@ -49,7 +49,7 @@ func parseLine(line string) (int, error) {
 	var dirRaw byte
 	var countRaw int
 
-	// validate string
+	// parse string
 	if _, err := fmt.Sscanf(line, "%c%d", &dirRaw, &countRaw); err != nil {
 		return 0, fmt.Errorf("cannot parse line: %w", err)
 	}
