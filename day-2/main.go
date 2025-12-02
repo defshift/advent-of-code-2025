@@ -16,7 +16,7 @@ func compareHalves(number string) bool {
 	return first == second
 }
 
-// sumBadIdsFromRange finds all bad ids and calculates sum of it
+// sumBadIdsFromRange finds all bad ids and calculates the sum of them
 func sumBadIdsFromRange(start int, end int) int {
 	sum := 0
 	for i := start; i < end; i++ {
