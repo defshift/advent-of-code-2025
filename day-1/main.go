@@ -81,9 +81,9 @@ func parseLine(line string) (int, error) {
 }
 
 func main() {
-	// get the logfile from the command line arguments
+	// get the inputfile from the command line arguments
 	if len(os.Args) < 2 {
-		log.Fatalf("usage: %s <logfile>", os.Args[0])
+		log.Fatalf("usage: %s <inputfile>", os.Args[0])
 	}
 	srcFile := os.Args[1]
 
